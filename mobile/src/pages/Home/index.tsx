@@ -68,38 +68,20 @@ const Home = () =>{
 
             <View style={styles.footer}>
               <RNPickerSelect
-              onValueChange={(value)=> setSelectedUf(value)}
-              placeholder={{
-                label: 'Selecione a UF'
-              }}
-              items={uf}
-    
+                onValueChange={(value)=> setSelectedUf(value)}
+                placeholder={{
+                  label: 'Selecione a UF'
+                }}
+                items={uf}     
               />
 
                <RNPickerSelect
-              onValueChange={(value) => setSelectedCity(value)}
-              placeholder={{
-                label: ''
-              }}
-              items={city}
+                onValueChange={(value) => setSelectedCity(value)}
+                placeholder={{
+                  label: ''
+                }}
+                items={city}                
               />
-              {/* <TextInput 
-                style={styles.input}
-                placeholder='Digite a Uf'
-                maxLength={2}
-                autoCapitalize="characters"
-                autoCorrect={false}
-                value={uf}
-                onChangeText={setUf}
-              />
-
-              <TextInput 
-                style={styles.input}
-                placeholder='Digite a Cidade'
-                autoCorrect={false}
-                value={city}
-                onChangeText={setCity}
-              /> */}
                 <RectButton style={styles.button} onPress={handleNavigationtoPoints}>
                     <View style={styles.buttonIcon}>
                        <Icon name='arrow-right' color='#fff' size={24}></Icon>
@@ -117,7 +99,7 @@ const styles = StyleSheet.create({
       flex: 1,
       padding: 32,
     },
-  
+    
     main: {
       flex: 1,
       justifyContent: 'center',
@@ -178,7 +160,8 @@ const styles = StyleSheet.create({
       color: '#FFF',
       fontFamily: 'Roboto_500Medium',
       fontSize: 16,
-    }
+    },
+
   });
 
 export default Home
