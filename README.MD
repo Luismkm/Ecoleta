@@ -39,8 +39,6 @@ $ npm run knex:migrate
 $ npm run knex:seed
 $ npm run dev
 
-
-
 # web
 $ cd web
 $ npm i
